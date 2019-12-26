@@ -27,7 +27,7 @@ class Userreconpy:
 
     def generate_json_file(self):
 
-        filename = f"{self.username}-{time.strftime('%y-%m-%d-%H-%M-%S')}"
+        filename = "result"
         output = json.dumps(self.results, indent=2)
         with open(f"{filename}.json", "w") as f:
             f.write(output)
